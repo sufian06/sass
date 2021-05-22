@@ -1,30 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1000px;
+  margin: 100px auto;
+  border: 1px solid #7eca05;
+  padding: 20px;
 }
 
 .main-menu {
-  background: tomato;
+  background: teal;
 }
 .main-menu nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
 }
 .main-menu nav ul li {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 .main-menu nav ul li a {
   color: #fff;
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   padding: 10px 15px;
   text-decoration: none;
   transition: 0.4s;
 }
 .main-menu nav ul li a:hover {
-  color: #ddd;
+  background-color: teal;
+}
+
+.services {
+  display: flex;
+  padding: 25px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services .single-service {
+  flex-basis: 305px;
+  background-color: #fafafa;
+  border: 1px solid #7eca05;
+  padding: 20px;
+}
+.services .single-service h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e40909;
+  font-family: "Big Shoulders Display", cursive;
+}
+.services .single-service a {
+  display: inline-block;
+  background: #6b0080;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.services .single-service a:hover {
+  background-color: tomato;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .about-left {
+  flex-basis: 790px;
+}
+.about .about-left h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #e40909;
+  font-family: "Big Shoulders Display", cursive;
+}
+.about .about-left a {
+  display: inline-block;
+  background-color: #6b0080;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.about .about-left a:hover {
+  background-color: tomato;
+}
+.about .about-menu {
+  flex-basis: 150px;
+}
+.about .about-menu ul {
+  list-style: none;
+}
+.about .about-menu ul li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.about .about-menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+footer {
+  margin-top: 20px;
+}
+footer p {
+  background-color: teal;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,30 +1,135 @@
+$primary-color: teal;
+$heading-color: #e40909;
+$btn-background: rgb(107, 0, 128);
+$btn-hover: tomato;
+$heading-font: "Big Shoulders Display", cursive;
+$border-color: rgb(126, 202, 5);
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600&display=swap");
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1000px;
+  margin: 100px auto;
+  border: 1px solid $border-color;
+  padding: 20px;
+}
 .main-menu {
-  background: tomato;
+  background: $primary-color;
   nav {
     ul {
       list-style: none;
       display: flex;
-      justify-content: flex-end;
+      // justify-content: flex-end;
       li {
-        margin-left: 20px;
+        margin-right: 20px;
         a {
           color: #fff;
           display: inline-block;
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 600;
           padding: 10px 15px;
           text-decoration: none;
           transition: 0.4s;
           &:hover {
-            color: #ddd;
+            background-color: teal;
           }
         }
       }
     }
+  }
+}
+
+.services {
+  display: flex;
+  padding: 25px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  .single-service {
+    flex-basis: 305px;
+    background-color: #fafafa;
+    border: 1px solid $border-color;
+    padding: 20px;
+    h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: $heading-color;
+      font-family: $heading-font;
+    }
+    p {
+    }
+    a {
+      display: inline-block;
+      background: $btn-background;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 20px;
+      text-transform: capitalize;
+      &:hover {
+        background-color: $btn-hover;
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .about-left {
+    flex-basis: 790px;
+    h4 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: $heading-color;
+      font-family: $heading-font;
+    }
+    p {
+    }
+    a {
+      display: inline-block;
+      background-color: $btn-background;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      &:hover {
+        background-color: $btn-hover;
+      }
+    }
+  }
+  .about-menu {
+    flex-basis: 150px;
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        a {
+          text-decoration: none;
+          color: #333;
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 20px;
+  p {
+    background-color: $primary-color;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
   }
 }
