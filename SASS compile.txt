@@ -1,0 +1,1 @@
+sass --watch D:\sass\basicToAdvance\assets\scss\main.scss D:\sass\basicToAdvance\assets\css\main.css

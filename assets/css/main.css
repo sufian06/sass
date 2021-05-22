@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu {
+  background: tomato;
+}
+.main-menu nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-menu nav ul li {
+  margin-left: 20px;
+}
+.main-menu nav ul li a {
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.main-menu nav ul li a:hover {
+  color: #ddd;
+}
+
+/*# sourceMappingURL=main.css.map */
