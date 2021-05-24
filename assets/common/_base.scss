@@ -20,3 +20,27 @@ a {
 img {
   max-width: 100%;
 }
+
+@mixin btn {
+  display: inline-block;
+  background: $btn-background;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+@mixin title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: $heading-color;
+  font-family: $heading-font;
+}
+
+@mixin border($border-color, $border-style, $border-width, $border-radius) {
+  border-color: $border-color;
+  border-style: $border-style;
+  border-width: $border-width;
+  border-radius: $border-radius;
+}

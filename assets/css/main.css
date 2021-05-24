@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #098ce4;
+  color: #333;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -71,8 +71,11 @@ img {
 .services .single-service {
   flex-basis: 305px;
   background-color: #fafafa;
-  border: 1px solid #7eca05;
   padding: 20px;
+  border-color: #cf649a;
+  border-style: dashed;
+  border-width: 3px;
+  border-radius: 15px;
 }
 .services .single-service h4 {
   font-size: 24px;
@@ -82,12 +85,12 @@ img {
 }
 .services .single-service a {
   display: inline-block;
-  background: #6b0080;
+  background: #cf649a;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   margin-top: 20px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .services .single-service a:hover {
   background-color: tomato;
@@ -100,27 +103,34 @@ img {
 }
 .about .about-left {
   flex-basis: 790px;
+  padding: 20px;
+  border-color: #cf649a;
+  border-style: double;
+  border-width: 5px;
+  border-radius: 50px;
 }
 .about .about-left h4 {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #e40909;
   font-family: "Big Shoulders Display", cursive;
 }
 .about .about-left a {
   display: inline-block;
-  background-color: #6b0080;
+  background: #cf649a;
   color: #fff;
-  text-decoration: none;
   padding: 10px 20px;
-  text-transform: capitalize;
+  text-decoration: none;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 .about .about-left a:hover {
   background-color: tomato;
 }
 .about .about-menu {
   flex-basis: 150px;
+  background-color: #7eca05;
+  padding: 20px;
 }
 .about .about-menu ul {
   list-style: none;
@@ -132,7 +142,13 @@ img {
 .about .about-menu ul li a {
   text-decoration: none;
   color: #333;
+  font-size: 18px;
+  font-weight: 600;
 }
+.about .about-menu ul li a:hover {
+  color: #fff;
+}
+
 footer {
   margin-top: 20px;
 }

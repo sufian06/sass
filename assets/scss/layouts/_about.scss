@@ -4,22 +4,15 @@
   flex-wrap: wrap;
   .about-left {
     flex-basis: 790px;
+    padding: 20px;
+    @include border($btn-background, double, 5px, 50px);
     h4 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: $heading-color;
-      font-family: $heading-font;
+      @include title;
     }
     p {
     }
     a {
-      display: inline-block;
-      background-color: $btn-background;
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 20px;
-      text-transform: capitalize;
-      margin-top: 20px;
+      @include btn;
       &:hover {
         background-color: $btn-hover;
       }
@@ -27,6 +20,8 @@
   }
   .about-menu {
     flex-basis: 150px;
+    background-color: $border-color;
+    padding: 20px;
     ul {
       list-style: none;
       li {
@@ -35,7 +30,10 @@
         a {
           text-decoration: none;
           color: #333;
+          font-size: 18px;
+          font-weight: 600;
           &:hover {
+            color: #fff;
           }
         }
       }
