@@ -13,8 +13,33 @@ body {
   padding: 20px;
 }
 
+a {
+  color: #098ce4;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-area {
+  display: flex;
+  align-items: center;
+}
+.header-area .logo-area {
+  width: 40%;
+}
+.header-area .logo-area .logo a {
+  display: inline-block;
+}
+.header-area .logo-area .logo a img {
+  width: 100px;
+}
+
 .main-menu {
-  background: teal;
+  width: 60%;
+  background: tomato;
 }
 .main-menu nav ul {
   list-style: none;
@@ -112,7 +137,7 @@ footer {
   margin-top: 20px;
 }
 footer p {
-  background-color: teal;
+  background-color: tomato;
   text-align: center;
   color: #fff;
   padding: 20px;

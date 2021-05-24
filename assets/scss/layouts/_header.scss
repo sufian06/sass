@@ -1,0 +1,42 @@
+.header-area {
+  display: flex;
+  align-items: center;
+  .logo-area {
+    width: 40%;
+    .logo {
+      a {
+        display: inline-block;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+.main-menu {
+  width: 60%;
+  background: $primary-color;
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      // justify-content: flex-end;
+      li {
+        margin-right: 20px;
+        a {
+          color: #fff;
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 10px 15px;
+          text-decoration: none;
+          transition: 0.4s;
+          &:hover {
+            background-color: teal;
+          }
+        }
+      }
+    }
+  }
+}
