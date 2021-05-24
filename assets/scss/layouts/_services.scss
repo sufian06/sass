@@ -20,3 +20,85 @@
     }
   }
 }
+
+/* ---- Extend Page css ---- */
+
+.single-service {
+  flex-basis: 305px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: teal;
+}
+.service1 {
+  background-color: burlywood;
+  @extend .single-service;
+}
+.service2 {
+  background-color: rgb(40, 150, 40);
+  @extend .single-service;
+}
+.service3 {
+  background-color: rgb(5, 99, 175);
+  @extend .single-service;
+  text-align: right;
+}
+.service4 {
+  background-color: rgb(148, 21, 120);
+  text-align: center;
+  @extend .single-service;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.btn-green {
+  background-color: green;
+  text-transform: uppercase;
+  @extend .btn;
+}
+.btn-red {
+  background-color: red;
+  text-transform: capitalize;
+  @extend .btn;
+}
+.btn-blue {
+  background-color: blueviolet;
+  text-transform: lowercase;
+  @extend .btn;
+}
+.btn-round {
+  border-radius: 40px;
+}
+
+.ext-body {
+  border: none;
+  padding: 0;
+}
+.ext-services {
+  display: flex;
+  padding: 25px 0;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  .single-service {
+    h4 {
+      @include title;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+      line-height: 24px;
+    }
+    a {
+      &:hover {
+        background-color: $btn-hover;
+      }
+    }
+  }
+}

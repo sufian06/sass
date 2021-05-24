@@ -68,7 +68,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
-.services .single-service {
+.services .single-service, .services .service4, .services .service3, .services .service2, .services .service1 {
   flex-basis: 305px;
   background-color: #fafafa;
   padding: 20px;
@@ -77,13 +77,13 @@ img {
   border-width: 3px;
   border-radius: 15px;
 }
-.services .single-service h4 {
+.services .single-service h4, .services .service4 h4, .services .service3 h4, .services .service2 h4, .services .service1 h4 {
   font-size: 24px;
   margin-bottom: 10px;
   color: #e40909;
   font-family: "Big Shoulders Display", cursive;
 }
-.services .single-service a {
+.services .single-service a, .services .service4 a, .services .service3 a, .services .service2 a, .services .service1 a {
   display: inline-block;
   background: #cf649a;
   color: #fff;
@@ -92,7 +92,89 @@ img {
   margin-top: 20px;
   text-transform: uppercase;
 }
-.services .single-service a:hover {
+.services .single-service a:hover, .services .service4 a:hover, .services .service3 a:hover, .services .service2 a:hover, .services .service1 a:hover {
+  background-color: tomato;
+}
+
+/* ---- Extend Page css ---- */
+.single-service, .service4, .service3, .service2, .service1 {
+  flex-basis: 305px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: teal;
+}
+
+.service1 {
+  background-color: burlywood;
+}
+
+.service2 {
+  background-color: #289628;
+}
+
+.service3 {
+  background-color: #0563af;
+  text-align: right;
+}
+
+.service4 {
+  background-color: #941578;
+  text-align: center;
+}
+
+.btn, .btn-blue, .btn-red, .btn-green {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn-green {
+  background-color: green;
+  text-transform: uppercase;
+}
+
+.btn-red {
+  background-color: red;
+  text-transform: capitalize;
+}
+
+.btn-blue {
+  background-color: blueviolet;
+  text-transform: lowercase;
+}
+
+.btn-round {
+  border-radius: 40px;
+}
+
+.ext-body {
+  border: none;
+  padding: 0;
+}
+
+.ext-services {
+  display: flex;
+  padding: 25px 0;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ext-services .single-service h4, .ext-services .service1 h4, .ext-services .service2 h4, .ext-services .service3 h4, .ext-services .service4 h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e40909;
+  font-family: "Big Shoulders Display", cursive;
+  color: #fff;
+}
+.ext-services .single-service p, .ext-services .service1 p, .ext-services .service2 p, .ext-services .service3 p, .ext-services .service4 p {
+  color: #fff;
+  line-height: 24px;
+}
+.ext-services .single-service a:hover, .ext-services .service1 a:hover, .ext-services .service2 a:hover, .ext-services .service3 a:hover, .ext-services .service4 a:hover {
   background-color: tomato;
 }
 
